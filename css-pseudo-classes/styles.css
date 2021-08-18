@@ -1,0 +1,22 @@
+button {
+  padding: 8px 18px;
+  font-size: 18px;
+  border-color: lightgray;
+  background: linear-gradient(white, lightgray);
+}
+
+button:hover {
+  color: white;
+  background: initial;
+  background-color: black;
+  cursor: pointer;
+}
+
+thead > tr {
+  color: white;
+  background-color: black;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: lightgray;
+}
