@@ -1,0 +1,11 @@
+h2 {
+font-family: 'Dancing Script', cursive;
+}
+
+h1, p {
+  font-family: 'Questrial', sans-serif;
+}
+
+p {
+  line-height: 1.7rem;
+}
