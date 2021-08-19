@@ -1,0 +1,70 @@
+html,
+body {
+  padding: 10px;
+}
+
+div {
+  max-width: 350px;
+}
+
+div.class {
+  width: 500px;
+}
+
+h1 {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #e7514e;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+label {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 500;
+  font-size: 0.6rem;
+  color: #454545;
+  text-transform: uppercase;
+  padding: 0 0 0 8px;
+}
+
+::placeholder {
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 0.6rem;
+  color: #b3b2b3;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  border: solid 1px #cccece;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 7px;
+  width: 350px;
+}
+
+select {
+  background-color: #f1f1f1;
+  font-family: 'Brandon Grotesque', sans-serif;
+}
+
+#submitdiv {
+  text-align: right;
+}
+
+#submit {
+  background-color: #e7514e;
+  padding: 8px 16px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 0.6rem;
+  border: none;
+  border-radius: 20px;
+}
+
+#maindiv {
+  text-align: center;
+}
