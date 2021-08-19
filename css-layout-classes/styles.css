@@ -11,12 +11,13 @@ div.container {
   font-family: sans-serif;
 }
 
-.row {
+div.row {
   display: flex;
+  justify-content: center;
 }
 
-.center {
-  justify-content: center;
+.photo {
+  width: 100%;
 }
 
 div.column-full {
