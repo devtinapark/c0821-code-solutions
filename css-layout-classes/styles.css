@@ -3,13 +3,20 @@
 }
 
 div.container {
-  padding: 200px;
+  padding: 50px 50px;
   margin: 0 auto;
-  max-width: 2000px;
+  max-width: 1500px;
+  min-height: 100vh;
+  align-items: center;
   font-family: sans-serif;
 }
 
 div.row {
+  display: flex;
+  justify-content: center;
+}
+
+div.img {
   display: flex;
   justify-content: center;
 }
@@ -19,7 +26,7 @@ div.column-full {
 }
 
 div.column-one-third {
-  flex-basis: clac(100% / 3);
+  flex-basis: calc(100% / 3);
 }
 
 div.column-two-thirds {
