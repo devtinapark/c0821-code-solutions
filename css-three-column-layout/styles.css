@@ -4,7 +4,8 @@
 
 .container-outside {
   margin: 200px auto auto auto;
-  padding: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   font-family: 'lato', sans-serif;
   color: white;
   background-color: #2687d2;
@@ -32,25 +33,35 @@
   border-radius: 50%;
   margin: auto;
   padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
-  width: 80px;
+  width: 65px;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .column-one-third {
   flex-basis: calc(100% / 3);
   text-align: center;
+}
+
+.textbox {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.5;
 }
