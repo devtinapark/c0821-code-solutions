@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-outside {
+  margin: 200px auto auto auto;
+  padding: 40px;
+  font-family: 'lato', sans-serif;
+  color: white;
+  background-color: #2687d2;
+}
+
+.container-inside {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.imagebox {
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+  padding: auto;
+}
+
+.icon {
+  width: 80px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+  text-align: center;
+}
