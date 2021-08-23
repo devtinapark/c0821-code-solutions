@@ -18,6 +18,11 @@ h2 {
   font-size: 34px;
 }
 
+h3 {
+  font-size: 20px;
+  line-height: 2;
+}
+
 p {
   font-size: 18px;
   line-height: 1.8;
@@ -41,8 +46,8 @@ p {
 
 .rowpadding {
   flex-basis: 100%;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .justify-center {
@@ -90,7 +95,7 @@ p {
 }
 
 .column-eighth {
-  flex-basis: 12.5%;
+  flex-basis: calc(100% / 8);
 }
 
 .bannerbox {
@@ -129,7 +134,9 @@ p {
   position: absolute;
   bottom: 80px;
   left: 80px;
-  font-family: 'avenir', sans-serif;
+  font-family:
+    'avenir',
+    sans-serif;
   font-size: 22px;
   color: white;
   background-color: #2f4361;
@@ -140,7 +147,9 @@ p {
 }
 
 .start {
-  font-family: 'avenir', sans-serif;
+  font-family:
+    'avenir',
+    sans-serif;
   font-size: 22px;
   color: white;
   background-color: #2f4361;
@@ -161,4 +170,13 @@ p {
   padding-top: 20px;
   padding-bottom: 60px;
   margin-bottom: 60px;
+}
+
+.subtlefooter {
+  background-color: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+  }
 }
