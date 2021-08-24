@@ -11,7 +11,7 @@ p {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 48px;
 }
 
 h2 {
@@ -26,6 +26,10 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.8;
+}
+
+.logo {
+  max-width: 180px;
 }
 
 .white {
@@ -48,6 +52,14 @@ p {
   flex-basis: 100%;
   padding-left: 300px;
   padding-right: 300px;
+}
+
+.headerpadding {
+  flex-basis: 100%;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .justify-center {
@@ -178,5 +190,9 @@ p {
   padding-bottom: 30px;
 }
 
-  }
+.grayfooter {
+  background-color: #525351;
+  padding-top: 130px;
+  padding-bottom: 80px;
+  margin-top: 40px;
 }
