@@ -11,25 +11,25 @@ p {
 }
 
 h1 {
-  font-size: 82px;
+  font-size: 64px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 46px;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 2;
 }
 
 p {
-  font-size: 38px;
+  font-size: 24px;
   line-height: 2;
 }
 
 .logo {
-  max-width: 280px;
+  max-width: 220px;
 }
 
 .white {
@@ -54,12 +54,22 @@ p {
   padding-right: 7%;
 }
 
-.headerpadding {
+.header {
   flex-basis: 100%;
-  padding-left: 110px;
-  padding-right: 110px;
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1.5px solid #e9eaed;
+}
+
+.navitem {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'avenir', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #b9b9b9;
 }
 
 .justify-center {
@@ -106,17 +116,22 @@ p {
   flex-basis: calc(700% / 12);
 }
 
-.column-eighth {
-  flex-basis: calc(100% / 8);
+.column-sixth {
+  flex-basis: calc(100% / 6);
+}
+
+.column-five-sixth {
+  flex-basis: calc(500% / 6);
 }
 
 .bannerbox {
   position: relative;
   background-image: url(images/hero.jpg);
   background-size: cover;
-  width: 2400px;
-  height: 1300px;
-  margin-bottom: 60px;
+  width: 1600px;
+  height: 900px;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .overlay {
@@ -143,7 +158,7 @@ p {
 
 .absolutestart {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   left: 7%;
   font-family:
     'avenir',
@@ -152,22 +167,35 @@ p {
   color: white;
   background-color: #2f4361;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 400px;
   height: 120px;
+}
+
+.contact {
+  font-family:
+    'avenir',
+    sans-serif;
+  font-size: 24px;
+  color: white;
+  background-color: #2f4361;
+  border: none;
+  border-radius: 5px;
+  width: 170px;
+  height: 50px;
 }
 
 .start {
   font-family:
     'avenir',
     sans-serif;
-  font-size: 22px;
+  font-size: 42px;
   color: white;
   background-color: #2f4361;
   border: none;
   border-radius: 5px;
-  width: 220px;
-  height: 60px;
+  width: 400px;
+  height: 120px;
 }
 
 .subtletop {
