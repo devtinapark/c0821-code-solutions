@@ -11,25 +11,25 @@ p {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 82px;
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 48px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 32px;
   line-height: 2;
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: 38px;
+  line-height: 2;
 }
 
 .logo {
-  max-width: 180px;
+  max-width: 280px;
 }
 
 .white {
@@ -50,8 +50,8 @@ p {
 
 .rowpadding {
   flex-basis: 100%;
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .headerpadding {
@@ -114,8 +114,8 @@ p {
   position: relative;
   background-image: url(images/hero.jpg);
   background-size: cover;
-  width: 1200px;
-  height: 640px;
+  width: 2400px;
+  height: 1300px;
   margin-bottom: 60px;
 }
 
@@ -130,32 +130,31 @@ p {
 
 .absoluteh1 {
   position: absolute;
-  top: 55px;
-  left: 80px;
-  padding-right: 200px;
+  top: 10%;
+  left: 7%;
 }
 
 .absolutep {
   position: absolute;
-  top: 200px;
-  left: 80px;
-  padding-right: 550px;
+  top: 27%;
+  left: 7%;
+  padding-right: 45%;
 }
 
 .absolutestart {
   position: absolute;
-  bottom: 80px;
-  left: 80px;
+  bottom: 15%;
+  left: 7%;
   font-family:
     'avenir',
     sans-serif;
-  font-size: 22px;
+  font-size: 42px;
   color: white;
   background-color: #2f4361;
   border: none;
-  border-radius: 5px;
-  width: 220px;
-  height: 60px;
+  border-radius: 10px;
+  width: 400px;
+  height: 120px;
 }
 
 .start {
