@@ -1,0 +1,38 @@
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.paddingrow {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.columnpadding {
+  padding: 60px;
+}
+
+.column-one-fifth {
+  flex-basis: 20%;
+}
+
+.imagebox {
+  width: 180px;
+  height: 350px;
+}
+
+img {
+  max-height: 350px;
+  object-fit: contain;
+}
