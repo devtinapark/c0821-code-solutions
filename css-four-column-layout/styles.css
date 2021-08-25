@@ -1,11 +1,17 @@
-.bold {
+body {
+  background-color: #f7f8fa;
+}
+
+h1,
+h2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
 }
 
-.regular {
+p {
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
+  margin-top: 40px;
 }
 
 .row {
@@ -13,8 +19,8 @@
 }
 
 .padding {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .block {
@@ -26,14 +32,29 @@
 }
 
 .column-one-fourth {
-  flex-basis: 25%;
-  margin: 30px;
+  flex: 25%;
 }
 
 .justify-center {
   justify-content: center;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .text-center {
   text-align: center;
+}
+
+img {
+  margin: auto;
+}
+
+.phone {
+  max-width: 300px;
+}
+
+.icon {
+  max-width: 150px;
 }
