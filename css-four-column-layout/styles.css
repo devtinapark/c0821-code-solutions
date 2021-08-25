@@ -7,3 +7,33 @@
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
 }
+
+.row {
+  display: flex;
+}
+
+.padding {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.block {
+  display: block;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+  margin: 30px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
