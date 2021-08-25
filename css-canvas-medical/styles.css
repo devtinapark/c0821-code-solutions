@@ -48,8 +48,7 @@ p {
   display: flex;
 }
 
-.rowpadding {
-  flex-basis: 100%;
+.padding {
   padding-left: 7%;
   padding-right: 7%;
 }
@@ -74,10 +73,6 @@ p {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-left {
-  justify-content: left;
 }
 
 .text-center {
