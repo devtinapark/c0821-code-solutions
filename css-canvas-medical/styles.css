@@ -1,0 +1,220 @@
+h1,
+h2 {
+  font-family: 'Tiempos Headline', serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+h3,
+p {
+  font-family: 'avenir', sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 2;
+}
+
+p {
+  font-size: 24px;
+  line-height: 2;
+}
+
+.logo {
+  max-width: 220px;
+}
+
+.white {
+  color: white;
+}
+
+.lightgray {
+  color: #707070;
+}
+
+.darkgray {
+  color: #525351;
+}
+
+.row {
+  display: flex;
+}
+
+.padding {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.header {
+  flex-basis: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1.5px solid #e9eaed;
+}
+
+.navitem {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'avenir', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #b9b9b9;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.block {
+  display: block;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.column-five-twelveths {
+  flex-basis: calc(500% / 12);
+}
+
+.column-seven-twelveths {
+  flex-basis: calc(700% / 12);
+}
+
+.column-sixth {
+  flex-basis: calc(100% / 6);
+}
+
+.column-five-sixth {
+  flex-basis: calc(500% / 6);
+}
+
+.bannerbox {
+  position: relative;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  width: 1600px;
+  height: 900px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.absoluteh1 {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+}
+
+.absolutep {
+  position: absolute;
+  top: 27%;
+  left: 7%;
+  padding-right: 45%;
+}
+
+.absolutestart {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  font-family:
+    'avenir',
+    sans-serif;
+  font-size: 42px;
+  color: white;
+  background-color: #2f4361;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  height: 120px;
+}
+
+.contact {
+  font-family:
+    'avenir',
+    sans-serif;
+  font-size: 24px;
+  color: white;
+  background-color: #2f4361;
+  border: none;
+  border-radius: 5px;
+  width: 170px;
+  height: 50px;
+}
+
+.start {
+  font-family:
+    'avenir',
+    sans-serif;
+  font-size: 42px;
+  color: white;
+  background-color: #2f4361;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  height: 120px;
+}
+
+.subtletop {
+  background-color: #f9f9f9;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.subtlebottom {
+  background-color: #f9f9f9;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+
+.subtlefooter {
+  background-color: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.grayfooter {
+  background-color: #525351;
+  padding-top: 130px;
+  padding-bottom: 80px;
+  margin-top: 40px;
+}
