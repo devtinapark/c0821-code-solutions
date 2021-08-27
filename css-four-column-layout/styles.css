@@ -32,7 +32,7 @@ p {
 }
 
 .column-one-fourth {
-  flex: 25%;
+  flex-basis: 25%;
 }
 
 .justify-center {
