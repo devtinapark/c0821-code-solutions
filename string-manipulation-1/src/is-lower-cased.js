@@ -5,5 +5,6 @@ function isLowerCased(word) {
     if (word[i] !== word[i].toLowerCase()) {
       allLower = false;
     }
-  } return allLower;
+  }
+  return allLower;
 }

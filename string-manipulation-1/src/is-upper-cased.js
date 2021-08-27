@@ -5,5 +5,6 @@ function isUpperCased(word) {
     if (word[i] !== word[i].toUpperCase()) {
       allUpper = false;
     }
-  } return allUpper;
+  }
+  return allUpper;
 }
