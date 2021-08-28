@@ -2,17 +2,13 @@
 function capitalize(word) {
   var newChar = '';
   var newWord = '';
-  for (var i = 0; i < word.length; i++) {
-    if (i === 0) {
-      newChar = word[i].toUpperCase();
-      newWord += newChar;
-      newChar = '';
-    } else {
-      newChar = word[i].toLowerCase();
-      newWord += newChar;
-      newChar = '';
-
-    }
+  newChar = word[0].toUpperCase();
+  newWord += newChar;
+  newChar = '';
+  for (var i = 1; i < word.length; i++) {
+    newChar = word[i].toLowerCase();
+    newWord += newChar;
+    newChar = '';
   }
   return newWord;
 }
