@@ -32,27 +32,27 @@ main {
   top: 3px;
 }
 
-.cold {
+.hot-button.cold {
   background-color: rgb(53, 28, 117);
 }
 
-.cool {
+.hot-button.cool {
   background-color: rgb(103, 78, 167);
 }
 
-.tepid {
+.hot-button.tepid {
   background-color: rgb(224, 102, 102);
 }
 
-.warm {
+.hot-button.warm {
   background-color: rgb(246, 178, 107);
 }
 
-.hot {
+.hot-button.hot {
   background-color: rgb(231, 231, 73);
 }
 
-.nuclear {
+.hot-button.nuclear {
   color: red;
   border-color: red;
   background-color: rgb(255, 255, 255);
