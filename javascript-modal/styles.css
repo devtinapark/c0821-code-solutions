@@ -8,6 +8,10 @@ h2 {
   margin-top: 50px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .row {
   display: flex;
 }
