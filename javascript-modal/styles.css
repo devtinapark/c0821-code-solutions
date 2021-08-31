@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-style: bold;
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-fs {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-fs {
+  align-items: flex-start;
+}
+
+.align-center {
+  height: 100vh;
+  align-items: center;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.blackBG {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popUpBox {
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.OMbutton {
+  font-size: 20px;
+  color: white;
+  background-color: #4a4ae9;
+  width: 160px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 3px;
+}
+
+.NObutton {
+  font-size: 20px;
+  color: white;
+  background-color: #eb5d5d;
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 3px;
+  margin-top: 40px;
+}
+
+.disappear {
+  display: none;
+}
