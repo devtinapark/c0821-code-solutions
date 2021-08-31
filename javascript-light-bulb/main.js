@@ -3,7 +3,7 @@ var $currentCircle = document.querySelector('#currentCircle');
 var isLightOn = true;
 
 function doSwitch(event) {
-  if (isLightOn === true) {
+  if (isLightOn) {
     $currentBG.className = 'darkBG';
     $currentCircle.className = 'circle darkCircle';
     isLightOn = false;
