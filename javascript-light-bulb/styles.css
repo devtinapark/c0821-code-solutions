@@ -1,0 +1,32 @@
+.lightBG {
+  background-color: #fef9f1;
+}
+
+.row {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.lightCircle {
+  background-color: #faea83;
+  box-shadow: 0 0 30px #faea83;
+}
+
+.darkBG {
+  background-color: #111;
+}
+
+.darkCircle {
+  background-color: #252525;
+}
