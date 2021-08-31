@@ -6,7 +6,7 @@ function dropRight(array, count) {
       newArray.push(array[i]);
     }
   } else {
-    for (var j = 0; j < (array.legnth - count); j++) {
+    for (var j = 0; j < (array.length - count); j++) {
       newArray.push(array[j]);
     }
   }
