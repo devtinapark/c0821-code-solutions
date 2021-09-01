@@ -3,6 +3,12 @@ span {
   text-align: center;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 .row {
   display: flex;
 }
