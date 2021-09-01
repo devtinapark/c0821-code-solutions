@@ -1,0 +1,36 @@
+span {
+  margin: 0;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  height: 100vh;
+  align-items: center;
+}
+
+.text-container {
+  font-family: monospace;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.underlined {
+  border-bottom: 3px solid black;
+}
+
+.error {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+.passed {
+  color: #19cd1c;
+}
