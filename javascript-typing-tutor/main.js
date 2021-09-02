@@ -18,12 +18,12 @@ function check(event) {
   }
 }
 
-function showAccuracy(event) {
-  if (i === $char.length - 1) {
-    $success.innerHTML = success;
-    $fail.innerHTML = fail;
+function showAccuracy() {
+  if (i === $char.length - i) {
+    $success.textContent += success;
+    $fail.textContent += fail;
     var accuracy = (success / (success + fail) * 100).toFixed(2);
-    $accuracy.innerHTML = accuracy;
+    $accuracy.textContent += accuracy;
   }
 }
 
@@ -32,5 +32,5 @@ function askAgain(event) {
 }
 
 window.addEventListener('keydown', check);
-window.addEventListener('keydown', showAccuracy);
 window.addEventListener('keydown', askAgain);
+showAccuracy();
