@@ -18,8 +18,8 @@ function check(event) {
   }
 }
 
-function showAccuracy() {
-  if (i === $char.length - i) {
+function showPopUp(event) {
+  if (event.key === $char[i].textContent && i === $char.length - 1) {
     $success.textContent += success;
     $fail.textContent += fail;
     var accuracy = (success / (success + fail) * 100).toFixed(2);
@@ -27,10 +27,5 @@ function showAccuracy() {
   }
 }
 
-function askAgain(event) {
-
-}
-
 window.addEventListener('keydown', check);
-window.addEventListener('keydown', askAgain);
-showAccuracy();
+window.addEventListener('keyup', showPopUp);
