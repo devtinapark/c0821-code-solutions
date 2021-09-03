@@ -5,6 +5,8 @@ var fail = 0;
 var $success = document.querySelector('.success');
 var $fail = document.querySelector('.fail');
 var $accuracy = document.querySelector('.accuracy');
+var $popUp = document.querySelector('#popUp');
+var $SObutton = document.querySelector('.SObutton');
 
 function check(event) {
   if (event.key === $char[i].textContent) {
@@ -22,10 +24,19 @@ function showPopUp(event) {
   if (event.key === $char[i].textContent && i === $char.length - 1) {
     $success.textContent += success;
     $fail.textContent += fail;
-    var accuracy = (success / (success + fail) * 100).toFixed(2);
+    var accuracy = (success / (success + fail) * 100).toFixed(2) + '%';
     $accuracy.textContent += accuracy;
+    $popUp.className = 'row justify-center align-center fixed blackBG';
+
   }
 }
 
+function startOver(event) {
+  success = 0;
+  fail = 0;
+  window.location.reload();
+}
+
 window.addEventListener('keydown', check);
-window.addEventListener('keyup', showPopUp);
+window.addEventListener('keydown', showPopUp);
+$SObutton.addEventListener('click', startOver);
