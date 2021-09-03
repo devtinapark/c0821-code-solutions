@@ -1,0 +1,3 @@
+/* exported todos */
+
+var todos = [];
