@@ -22,19 +22,23 @@ function check(event) {
 
 function showPopUp(event) {
   if (event.key === $char[i].textContent && i === $char.length - 1) {
-    $success.textContent += success;
-    $fail.textContent += fail;
-    var accuracy = (success / (success + fail) * 100).toFixed(2) + '%';
-    $accuracy.textContent += accuracy;
+    $success.textContent = 'Success: ' + success;
+    $fail.textContent = 'Fail: ' + fail;
+    var accuracy = (success / (success + fail) * 100).toFixed(2);
+    $accuracy.textContent = 'Accuracy: ' + accuracy + '%';
     $popUp.className = 'row justify-center align-center fixed blackBG';
-
   }
 }
 
 function startOver(event) {
+  $char[0].className = 'underlined';
+  for (i = 1; i < $char.length; i++) {
+    $char[i].className = '';
+  }
+  i = 0;
   success = 0;
   fail = 0;
-  window.location.reload();
+  $popUp.className = 'row justify-center align-center fixed blackBG disappear';
 }
 
 window.addEventListener('keydown', check);
