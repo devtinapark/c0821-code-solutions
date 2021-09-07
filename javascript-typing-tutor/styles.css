@@ -1,0 +1,81 @@
+span {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  height: 100vh;
+  align-items: center;
+}
+
+.text-container {
+  font-family: monospace;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.underlined {
+  border-bottom: 3px solid black;
+}
+
+.error {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+.passed {
+  color: #19cd1c;
+}
+
+.blackBG {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popUpBox {
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+.SObutton {
+  font-size: 20px;
+  color: white;
+  background-color: #eb5d5d;
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 3px;
+  margin-top: 30px;
+}
+
+.disappear {
+  display: none;
+}
