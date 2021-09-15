@@ -1,6 +1,6 @@
 /* exported Bank */
 function Bank() {
-  this.nextAccountNumber = 0;
+  this.nextAccountNumber = 1;
   this.accounts = [];
 }
 
