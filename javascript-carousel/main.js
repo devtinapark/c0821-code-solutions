@@ -1,10 +1,10 @@
-/* var $arrowLeft = document.querySelector('#arrowLeft');
-var $arrowRight = document.querySelector('#arrowRight'); */
+var $arrowLeft = document.querySelector('#arrowLeft');
+/* var $arrowRight = document.querySelector('#arrowRight'); */
 var $navCircleBox = document.querySelector('#navCircleBox');
 var $navList = document.querySelectorAll('.nav');
 var $img = document.querySelector('img');
 
-/* $arrowLeft.addEventListener('click', showBefore);
+$arrowLeft.addEventListener('click', showBefore); /*
 $arrowRight.addEventListener('click', showAfter); */
 $navCircleBox.addEventListener('click', showCorresponding);
 
@@ -86,12 +86,33 @@ function showCorresponding(event) {
   }
   startTransitions();
 }
+
+function showBefore(event) {
+  stopTransitions();
+  var currentSrc = $img.getAttribute('src');
+  for (var l = 0; l < imageNames[l].length; l++) {
+    if (imageNames[l].name === currentSrc) {
+      var srcText = imageNames[l - 1].name;
+      $img.setAttribute('src', srcText);
+    }
+  }
+  startTransitions();
+}
+
 /*
 function showBefore(event) {
   stopTransitions();
   if (i > 0) {
     srcText = imageNames[i - 1].name;
+    console.log(i - 1);
+    console.log(imageNames[i - 1]);
+    console.log(srcText);
     $img.setAttribute('src', srcText);
+    correspondNav(imageNames[i - 1].navID);
+  } else {
+    srcText = imageNames[i + 4].name;
+    $img.setAttribute('src', srcText);
+    correspondNav(imageNames[i + 4].navID);
   }
   startTransitions();
 }
@@ -101,6 +122,11 @@ function showAfter(event) {
   if (i < 4) {
     srcText = imageNames[i + 1].name;
     $img.setAttribute('src', srcText);
+    correspondNav(imageNames[i + 1].navID);
+  } else {
+    srcText = imageNames[i - 4].name;
+    $img.setAttribute('src', srcText);
+    correspondNav(imageNames[i - 4].navID);
   }
   startTransitions();
 }
