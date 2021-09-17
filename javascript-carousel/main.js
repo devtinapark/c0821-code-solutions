@@ -1,11 +1,11 @@
 var $arrowLeft = document.querySelector('#arrowLeft');
-/* var $arrowRight = document.querySelector('#arrowRight'); */
+var $arrowRight = document.querySelector('#arrowRight');
 var $navCircleBox = document.querySelector('#navCircleBox');
 var $navList = document.querySelectorAll('.nav');
 var $img = document.querySelector('img');
 
-$arrowLeft.addEventListener('click', showBefore); /*
-$arrowRight.addEventListener('click', showAfter); */
+$arrowLeft.addEventListener('click', showBefore);
+$arrowRight.addEventListener('click', showAfter);
 $navCircleBox.addEventListener('click', showCorresponding);
 
 var imageNames = [
@@ -75,59 +75,58 @@ function showCorresponding(event) {
   stopTransitions();
   if (event.target.tagName === 'I') {
     var targetID = event.target.getAttribute('id');
+    showImagebyID(targetID);
     correspondNav(targetID);
-    for (var k = 0; k < imageNames.length; k++) {
-      if (imageNames[k].navID === targetID) {
-        srcText = imageNames[k].name;
-        $img.setAttribute('src', srcText);
-        i = imageNames[k].i;
-      }
-    }
   }
   startTransitions();
+}
+
+function showImagebyID(imageID) {
+  for (var k = 0; k < imageNames.length; k++) {
+    if (imageNames[k].navID === imageID) {
+      srcText = imageNames[k].name;
+      $img.setAttribute('src', srcText);
+      i = imageNames[k].i;
+    }
+  }
 }
 
 function showBefore(event) {
   stopTransitions();
   var currentSrc = $img.getAttribute('src');
-  for (var l = 0; l < imageNames[l].length; l++) {
+  var beforeID;
+  for (var l = 0; l < imageNames.length; l++) {
     if (imageNames[l].name === currentSrc) {
-      var srcText = imageNames[l - 1].name;
+      if (l > 0) {
+        beforeID = l - 1;
+      } else {
+        beforeID = l + 4;
+      }
+      srcText = imageNames[beforeID].name;
       $img.setAttribute('src', srcText);
+      correspondNav(imageNames[beforeID].navID);
     }
   }
-  startTransitions();
-}
 
-/*
-function showBefore(event) {
-  stopTransitions();
-  if (i > 0) {
-    srcText = imageNames[i - 1].name;
-    console.log(i - 1);
-    console.log(imageNames[i - 1]);
-    console.log(srcText);
-    $img.setAttribute('src', srcText);
-    correspondNav(imageNames[i - 1].navID);
-  } else {
-    srcText = imageNames[i + 4].name;
-    $img.setAttribute('src', srcText);
-    correspondNav(imageNames[i + 4].navID);
-  }
   startTransitions();
 }
 
 function showAfter(event) {
   stopTransitions();
-  if (i < 4) {
-    srcText = imageNames[i + 1].name;
-    $img.setAttribute('src', srcText);
-    correspondNav(imageNames[i + 1].navID);
-  } else {
-    srcText = imageNames[i - 4].name;
-    $img.setAttribute('src', srcText);
-    correspondNav(imageNames[i - 4].navID);
+  var currentSrc = $img.getAttribute('src');
+  var afterID;
+  for (var m = 0; m < imageNames.length; m++) {
+    if (imageNames[m].name === currentSrc) {
+      if (m < 4) {
+        afterID = m + 1;
+      } else {
+        afterID = m - 4;
+      }
+      srcText = imageNames[afterID].name;
+      $img.setAttribute('src', srcText);
+      correspondNav(imageNames[afterID].navID);
+    }
   }
+
   startTransitions();
 }
-*/
