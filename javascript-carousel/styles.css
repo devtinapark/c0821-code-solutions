@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.boxCarousel {
+  width: 600px;
+  height: 400px;
+  border: 3px solid black;
+}
+
+.col_one_twelveth {
+  flex-basis: calc(100% * 1 / 12);
+}
+
+.col_ten_twelvets {
+  flex-basis: calc(100% * 10 / 12);
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  max-height: 350px;
+  object-fit: contain;
+}
