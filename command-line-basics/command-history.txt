@@ -1,0 +1,498 @@
+    1  exit
+    2  whoami
+    3  git config --global user.name "Christine Tina Park"
+    4  git config --global user.email "escp1004jk@gmail.com"
+    5  git config --global --list
+    6  exit
+    7  git branch javascript-ajax
+    8  git switch javascript-ajax
+    9  dev-env
+   10  exit
+   11  git status
+   12  cd repos
+   13  ls
+   14  cd c0821-code-solutions/
+   15  ls
+   16  git status
+   17  git add .
+   18  git commit -m "Completed javaavascript-ajax. - Christine Tina Park"
+   19  git push origin javascript-ajax
+   20  git checkout master
+   21  git switch http-messages
+   22  git checkout master
+   23  dev-env
+   24  clear
+   25  exit
+   26  clear
+   27  git checkout master
+   28  cd
+   29  exit
+   30  http http://image-charts.com/chart
+   31  http --verbose https://image.charts.com/chart
+   32  http --verbose http://image-charts.com/chart
+   33  clear
+   34  git status
+   35  exit
+   36  cd repos
+   37  cd c0821-code-solutions/
+   38  git branch string-manipulation-3
+   39  git switch string-manipulation-3
+   40  git status
+   41  git add .
+   42  git status
+   43  git commit -m "RD"
+   44  clear
+   45  git checkout master
+   46  clear
+   47  exit
+   48  http https://getpantry.cloud/apiv1/pantry/B48c837c-62ce-4441-abc3-94f35d725bd8
+   49  exit
+   50  http http://image-charts.com/chart
+   51  https://image-charts.com/chart
+   52  ?cht=p3
+   53  &chs=700x100
+   54  &chd=t:60,40
+   55  &chl=Hello|World
+   56  &chan
+   57  clear
+   58  http https://image-charts.com/chart?cht=p3&chs=700x100&chd=t:60,40&chl=Hello|World&chan&chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,1g,45,8bc34a,0.2,009688.1
+   59  http https://image-charts.com/chart?cht=p3&chs=700x100&chd=t:60,40&chl=Hello|World&chan&chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,lg,45,8bc34a,0.2,009688,1
+   60  clear
+   61  http https://image-charts.com/chart?cht=p3&chs=700x100&chd=t:60,40&chl=Hello|World&chan&chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,lg,45,8bc34a,0.2,009688,1
+   62  http https://api.m30.com/
+   63  http https://api.m3o.com/v1/db/Read
+   64  http POST https://api.m3o.com/v1/db/Read
+   65  http -H 'Authorization: Bearer ZDgxYzA5YjQtMzhhMi00NzMwLWI4NTktYmZjYTRlNTE0MDIz' https://api.m3o.com/v1/user/Read
+   66  curl
+   67  curl --help
+   68  curl -H 'Authorization: Bearer ZDgxYzA5YjQtMzhhMi00NzMwLWI4NTktYmZjYTRlNTE0MDIz' https://api.m3o.com/v1/user/Read
+   69  curl clear
+   70  clear
+   71  curl "https://api.m3o.com/v1/user/Read" -H "Content-Type: application/json" -H "Authorization: Bearer $MICRO_API_TOKEN" -d '{
+   72    "id": "usrid-1"
+   73  }'
+   74  curl "https://api.m3o.com/v1/user/Read" -H "Content-Type: application/json" -H "Authorization: Bearer ZDgxYzA5YjQtMzhhMi00NzMwLWI4NTktYmZjYTRlNTE0MDIz" -d '{
+   75    "id": "usrid-1"
+   76  }'
+   77  http https://api.m30.com/v1/user/Read
+   78  http https://api.m30.com/
+   79  POST https://api.m3o.com/v1/db/Read
+   80  http POST https://api.m3o.com/v1/db/Delete
+   81  curl -XPOST -H "Content-type: application/json" -d '{ "key": "value" }' 'https://getpantry.cloud/apiv1/pantry/746bf19a-1c30-42bb-9332-fe8ed4cddb55/basket/testBasket'
+   82  curl --location --request GET 'https://getpantry.cloud/apiv1/pantry/YOUR_PANTRY_ID' --header 'Content-Type: application/json' clear
+   83  clear
+   84  curl --location --request GET 'https://getpantry.cloud/apiv1/pantry/746bf19a-1c30-42bb-9332-fe8ed4cddb55' --header 'Content-Type: application/json' --data-raw ''
+   85  http GET https://getpantry.cloud/apiv1/pantry/746bf19a-1c30-42bb-9332-fe8ed4cddb55
+   86  http https://api.m3o.com/v1/user/Read
+   87  http --header "Authorization: Bearer ODgxY2I5YmUtNzYwZC00NTdhLTkwMTItZTczYzU5Zjk0MDAz" https://api.m3o.com/v1/user/Read
+   88  curl -H 'Authorization: Bearer ODgxY2I5YmUtNzYwZC00NTdhLTkwMTItZTczYzU5Zjk0MDAz' https://api.m3o.com/v1/user/Read
+   89  curl "https://api.m3o.com/v1/user/Create" \ -H "Content-Type: application/json" \ -H "Authorization: ODgxY2I5YmUtNzYwZC00NTdhLTkwMTItZTczYzU5Zjk0MDAz" \ -d '{
+   90  "email": "escp1004jk@gmail.com",
+   91  "id": "pes6214",
+   92  "password": "1234",
+   93  "username": "tina-park"
+   94  }'
+   95  clear
+   96  http https://image-charts.com/chart
+   97  ?cht=<chart_type>
+   98  &chd=<chart_data>
+   99  &chs=<chart_size>
+  100  &...additional_parameters...
+  101  clear
+  102  git GET https://image-charts.com/chart
+  103  ?cht=<chart_type>
+  104  &chd=<chart_data>
+  105  &chs=<chart_size>
+  106  &...additional_parameters
+  107  http GET https://image-charts.com/chart
+  108  ?cht=<chart_type>
+  109  &chd=<chart_data>
+  110  &chs=<chart_size>
+  111  &...additional_parameters...
+  112  clear
+  113  http https://image-charts.com/chart?cht=p3&chs=700x100&chd=t:60,40&chl=Hello|World&chan&chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,lg,45,8bc34a,0.2,009688,1,0
+  114  exit
+  115  http https://image-charts.com/chart?cht=p3&chs=700x100&chd=t:60,40&chl=Hello|World&chan&chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,lg,45,8bc34a,0.2,009688,1
+  116  http GET https://api.gyazo.com/api/images
+  117  cd repos
+  118  dev-env
+  119  http --body GET https://image-charts.com/chart
+  120  ?cht=p3
+  121  &chs=700x100
+  122  &chd=t:60,40
+  123  &chl=Hello|World
+  124  &chan
+  125  &chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,lg,45,8bc34a,0.2,009688,1
+  126  clear
+  127  http --body GET https://image-charts.com/chart?cht=p3&chs=700x100&chd=t:60,40&chl=Hello|World&chan&chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,lg,45,8bc34a,0.2,009688,1 > charts.json
+  128  clear
+  129  http GET https://api.gofile.io/getServer
+  130  clear
+  131  dev-env
+  132  http get https://image-charts.com/chart?chs=700x190&chd=t:60,40&cht=p3&chl=Hello%7CWorld&chan&chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,lg,45,8bc34a,0.2,009688,1
+  133  http GET https://image-charts.com/chart?chan&chd=t%3A60%2C40%2C20&chdl=Image%7CCharts%7CRocks&chf=ps0-0%2Clg%2C45%2Cffeb3b%2C0.2%2Cf443367C%2C1%7Cps0-1%2Clg%2C45%2C8bc34a%2C0.2%2C0096887C%2C1%7Cps0-2%2Clg%2C45%2CEA469E%2C0.2%2C03A9F47C%2C1&chl=2018%7C2017%7C2015&chs=700x300&cht=pa&chxt=x%2Cy
+  134  http https://image-charts.com/chart?chan&chd=t%3A60%2C40%2C20&chdl=Image%7CCharts%7CRocks&chf=ps0-0%2Clg%2C45%2Cffeb3b%2C0.2%2Cf443367C%2C1%7Cps0-1%2Clg%2C45%2C8bc34a%2C0.2%2C0096887C%2C1%7Cps0-2%2Clg%2C45%2CEA469E%2C0.2%2C03A9F47C%2C1&chl=2018%7C2017%7C2015&chs=700x300&cht=pa&chxt=x%2Cy
+  135  http URL GET https://image-charts.com/chart?chan&chd=t%3A60%2C40%2C20&chdl=Image%7CCharts%7CRocks&chf=ps0-0%2Clg%2C45%2Cffeb3b%2C0.2%2Cf443367C%2C1%7Cps0-1%2Clg%2C45%2C8bc34a%2C0.2%2C0096887C%2C1%7Cps0-2%2Clg%2C45%2CEA469E%2C0.2%2C03A9F47C%2C1&chl=2018%7C2017%7C2015&chs=700x300&cht=pa&chxt=x%2Cy
+  136  https://image-charts.com/chart?chan&chd=t%3A60%2C40%2C20&chdl=Image%7CCharts%7CRocks&chf=ps0-0%2Clg%2C45%2Cffeb3b%2C0.2%2Cf443367C%2C1%7Cps0-1%2Clg%2C45%2C8bc34a%2C0.2%2C0096887C%2C1%7Cps0-2%2Clg%2C45%2CEA469E%2C0.2%2C03A9F47C%2C1&chl=2018%7C2017%7C2015&chs=700x300&cht=pa&chxt=x%2Cyclear
+  137  clear
+  138  http URL GET https://image-charts.com/chart?chan&chd=t%3A60%2C40%2C20&chdl=Image%7CCharts%7CRocks&chf=ps0-0%2Clg%2C45%2Cffeb3b%2C0.2%2Cf443367C%2C1%7Cps0-1%2Clg%2C45%2C8bc34a%2C0.2%2C0096887C%2C1%7Cps0-2%2Clg%2C45%2CEA469E%2C0.2%2C03A9F47C%2C1&chl=2018%7C2017%7C2015&chs=700x300&cht=pa&chxt=x%2Cy
+  139  http URL https://image-charts.com/chart?chan&chd=t%3A60%2C40%2C20&chdl=Image%7CCharts%7CRocks&chf=ps0-0%2Clg%2C45%2Cffeb3b%2C0.2%2Cf443367C%2C1%7Cps0-1%2Clg%2C45%2C8bc34a%2C0.2%2C0096887C%2C1%7Cps0-2%2Clg%2C45%2CEA469E%2C0.2%2C03A9F47C%2C1&chl=2018%7C2017%7C2015&chs=700x300&cht=pa&chxt=x%2Cy
+  140  exit
+  141  http POST https://image-charts.com/chart?chan&chd=t%3A60%2C40%2C20&chdl=Image%7CCharts%7CRocks&chf=ps0-0%2Clg%2C45%2Cffeb3b%2C0.2%2Cf443367C%2C1%7Cps0-1%2Clg%2C45%2C8bc34a%2C0.2%2C0096887C%2C1%7Cps0-2%2Clg%2C45%2CEA469E%2C0.2%2C03A9F47C%2C1&chl=2018%7C2017%7C2015&chs=700x300&cht=pa&chxt=x%2Cy
+  142  http GET https://image-charts.com/chart?cht=p3&chs=700x100&chd=t:60,40&chl=Hello|World&chan&chf=ps0-0,lg,45,ffeb3b,0.2,f44336,1|ps0-1,lg,45,8bc34a,0.2,009688,1
+  143  dev-env
+  144  http GET https://imge-charts.com/chart?chd=to:60,40
+  145  clear
+  146  curl -X POST      -H 'Content-Type: application/json'      -d '{"chart": {"type": "bar", "data": {"labels": ["Hello", "World"], "datasets": [{"label": "Foo", "data": [1, 2]}]}}}'      https://quickchart.io/chart/create
+  147  http GET https://quickchart.io/chart/render/zf-0a6e6572-20ef-4246-8823-f99ec61083e4
+  148  $ curl -X POST      -H "Content-Type: application/json"      -d @chart_request.json      'https://quickchart.io/chart' > chart.png
+  149  $ curl -X POST      -H "Content-Type: application/json"      -d @chart_request.json      'https://quickchart.io/chart' > chart.png
+  150  curl -X POST      -H "Content-Type: application/json"      -d @chart_request.json      'https://quickchart.io/chart' > chart.png
+  151  ls
+  152  git status
+  153  status
+  154  curl -X POST      -H "Content-Type: application/json"      -d @chart_request.json      'https://quickchart.io/chart' > chart.png
+  155  clear
+  156  http https://quickchart.io/chart
+  157  http https://quickchart.io/chart?c={type:'bar',data:{labels:[2012,2013,2014,2015,2016],datasets:[{label:'Users',data:[120,60,50,180,120]}]}}
+  158  curl -X POST      -H 'Content-Type: application/json'      -d '{"chart": {"type": "bar", "data": {"labels": ["Hello", "World"], "datasets": [{"label": "Foo", "data": [1, 2]}]}}}'      https://quickchart.io/chart/create
+  159  http https://quickchart.io/chart/render/zf-1ea33e4e-342d-4e9a-b0e4-9e6edee6305e
+  160  clear
+  161  http GET /api/qotd
+  162  http GET https://favqs.com/api/qotd
+  163  http GET https://inspiration.goprogram.ai
+  164  httphttps://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand
+  165  ht
+  166  http https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand
+  167  clear
+  168  http https://favqs.com/api
+  169  clear
+  170  http https://favqs.com/api/qotd
+  171  exit
+  172  http https://favqs.com/api/qotd
+  173  exit
+  174  cd
+  175  cd repos
+  176  git clone git@github.com:christine-tina-park/ajax-project.git
+  177  ls
+  178  cd ajax-project
+  179  npm ci
+  180  git pull origin master
+  181  git branch issue-1-generate-wheel-of-life
+  182  git switch issue-1-generate-wheel-of-life
+  183  npm install easydropdown --save
+  184  np uninstall easydropdown
+  185  dev-env
+  186  npm uninstall easydropdown
+  187  git status
+  188  git add .
+  189  git status
+  190  git commit -m "Created Wheel of Life and local storage for dataWheel. - #1"
+  191  clear
+  192  git status
+  193  git add .
+  194  git commit -m "Created Wheel of Life and data model. - #1"
+  195  git push origin issue-1-generate-wheel-of-life
+  196  git status
+  197  git add .
+  198  git status
+  199  git commit -m "Completed issue-1-generate-wheel-of-life. - Christine Tina Park"
+  200  git status
+  201  git add .
+  202  git status
+  203  git commit -m "Completed issue-1-generate-wheel-of-life"
+  204  git status
+  205  git add .
+  206  git commit -m "Completed issue-1-generate-wheel-of-life" --no-verify
+  207  git push origin issue-1-generate-wheel-of-life
+  208  git checkout master
+  209  exit
+  210  cd repos
+  211  git clone git@github.com:christine-tina-park/practice-problems.git
+  212  ls
+  213  cd practce-problems
+  214  cd practice-problems
+  215  npm ci
+  216  exit
+  217  cd repos
+  218  ls
+  219  cd ajax-project/
+  220  git branch --list
+  221  bit switch issue-2-create-an-entry-in-vision-board
+  222  git switch issue-2-create-an-entry-in-vision-board
+  223  clear
+  224  git checkout master
+  225  git status
+  226  git add.
+  227  git status
+  228  git commit -m "Added quote box."
+  229  git push origin issue-2-create-an-entry-in-vision-board
+  230  git add .
+  231  git status
+  232  git commit -m "Added boxquote. - #2."
+  233  git push origin issue-2-create-an-entry-in-vision-board
+  234  git checkout master
+  235  pull origin master
+  236  git pull origin master
+  237  cd repos
+  238  ls
+  239  git checkout master
+  240  cd
+  241  cd repos
+  242  cd c0821-code-solutions/
+  243  git pull origin master
+  244  cd
+  245  cd repos
+  246  cd ajax-project/
+  247  git branch --list
+  248  git branch issue-3-view-entries-in-vision-board
+  249  git switch issue-3-view-entries-in-vision-board
+  250  git branch --list
+  251  clear
+  252  git checkout master
+  253  pull origin master
+  254  git pull origin master
+  255  git branch --list
+  256  git switch issue-3-view-entries-in-vision-board
+  257  git branch -d issue-3-view-entries-in-vision-board
+  258  git checkout master
+  259  git branch -d issue-3-view-entries-in-vision-board
+  260  git branch issue-3-view-entries-in-vision-board
+  261  git branch --list
+  262  git switch issue-3-view-entries-in-vision-board
+  263  clear
+  264  git status
+  265  git add .
+  266  git commit -m "Fixed bug by setting form button type as button. - #3"
+  267  git push origini issue-3-view-entries-in-vision-board
+  268  git status
+  269  git push origin issue-3-view-entries-in-vision-board
+  270  git checkout master
+  271  git branch --list
+  272  git swtich issue-3-view-entries-in-vision-board
+  273  git switch issue-3-view-entries-in-vision-board
+  274  git status
+  275  git add .
+  276  git status
+  277  git commit -m "Optimized doSwapDV function and handleLoad function. - #3."
+  278  git push origin issue-3-view-entries-in-vision-board
+  279  git checkout master
+  280  git pull origin master
+  281  git branch --list
+  282  pull origin master
+  283  git branch issue-4-modify-an-entry-in-vision-board
+  284  git status
+  285  git switch issue-4-modify-an-entry-in-vision-board
+  286  clear
+  287  git status
+  288  git add .
+  289  git status
+  290  git commit -m "Modifies entries for data model and DOM. - #4"
+  291  git push origin issue-4-modify-an-entry-in-vision-board
+  292  git status
+  293  git add .
+  294  git status
+  295  exit
+  296  cd
+  297  cd repos
+  298  ls
+  299  cd ajax-project
+  300  git status
+  301  git add .
+  302  git commit -m "RD"
+  303  exit
+  304  ls
+  305  cd repos
+  306  ls
+  307  cd c0821-code-solutions/
+  308  git switch string-manipulation-3
+  309  git status
+  310  git add .
+  311  claear
+  312  clear
+  313  git status
+  314  git commit -m "Completed string-manipulation-3. - Christine Tina Park"
+  315  git push origin string-manipulation-3
+  316  git status
+  317  git push origin string-manipulation-3
+  318  git checkout  master
+  319  git branch array-manipulation-3
+  320  git switch array-manipulation-3
+  321  clear
+  322  git status
+  323  git add .
+  324  git status
+  325  git commit -m "Completed array-manipulation-3. - Christine Tina Park"
+  326  git status
+  327  git add .
+  328  git status
+  329  git commit -m "Completed array-manipulation-3. - Christine Tina Park"
+  330  git push origin array-manipulation-3
+  331  git checkout master
+  332  git switch array-manipulation-3
+  333  git checkout master
+  334  clear
+  335  git branch object-manipulation-3
+  336  git switch object-manipulation-3
+  337  git status
+  338  git add .
+  339  git status
+  340  git commit -m "Completed object-manipulation-3. - Christine Tina Park"
+  341  git push origin object-manipulation-3
+  342  git checkout master
+  343  exit
+  344  cd
+  345  ls
+  346  cd repos
+  347  ls
+  348  cd ajax-project/
+  349  git status
+  350  git push origin issue-4-modify-an-entry-in-vision-board
+  351  git status
+  352  git checkout master
+  353  cd
+  354  cd repos
+  355  dev-env
+  356  ls
+  357  cd c0821-code-solutions/
+  358  clear
+  359  git branch es6-const-let
+  360  git switch es6-const-let
+  361  git status
+  362  git add .
+  363  git status
+  364  git commit -m "Completed es6-const-let. - Christine Tina Park"
+  365  git push origin es6-const-let
+  366  git checkoutmaster
+  367  git checkout master
+  368  git switch es6-const-let 
+  369  git checkout master
+  370  git branch es6-template-literals
+  371  git switch es6-template-literals
+  372  clear
+  373  git status
+  374  git add .
+  375  git status
+  376  git commit -m "Completed  es6-template-literals. - Christine Tina Park"
+  377  git push origin es6-template-literals
+  378  git checkout master
+  379  git pull origin
+  380  git pull origin master
+  381  clear
+  382  git status
+  383  git pull origin master
+  384  clear
+  385  git branch es6-destructuring
+  386  git switch es6-destructuring
+  387  git status
+  388  git add .
+  389  git status
+  390  git commit -m "Completed es6-destructuring. - Christine Tina Park"
+  391  git push origin des6-destructuring
+  392  git push origin es6-destructuring
+  393  git checkout master
+  394  cd
+  395  cd repos
+  396  ls
+  397  cd ajax-project/
+  398  git branch --list
+  399  git switch issue-4-modify-an-entry-in-vision-board
+  400  git status
+  401  git push origin issue-4-modify-an-entry-in-vision-board
+  402  git status
+  403  git add .
+  404  git status
+  405  git commit -m "RD to fix delete bug"
+  406  git push origin
+  407  git push origin issue-4-modify-an-entry-in-vision-board
+  408  clear
+  409  cd
+  410  pwd
+  411  cd
+  412  ls
+  413  cd repos
+  414  cd c0821-code-solutions/
+  415  cd command-line-basics
+  416  pwd
+  417  git branch command-line-basics
+  418  git switch command-line-basics
+  419  git checkout master
+  420  cd command-line-basics
+  421  pwd
+  422  man man
+  423  man
+  424  man man
+  425  man cat
+  426  cat laziness.txt
+  427  cat impatience.txt
+  428  cat hubris.txt
+  429  cat laziness.txt impatience.txt hubris.txt
+  430  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  431  cat three-virtues.txt
+  432  man cat
+  433  man ls
+  434  ls
+  435  ls -a
+  436  ls -F
+  437  ls -aF
+  438  ls -Fa
+  439  ls
+  440  ls lfz-staff
+  441  ls lfz-staff -a
+  442  ls lfz-staff -F
+  443  ls -aF lfz-staff > lfz-staff/contents.txt
+  444  cat lfz-staff/contents.txt
+  445  man pwd
+  446  pwd
+  447  pwd > i-was-here.txt
+  448  ls
+  449  cat i-was-here.txt
+  450  man echo
+  451  echo 'Hello, World!'
+  452  echo 'Hello, World!' > hello.txt
+  453  ls
+  454  cat hello.txt
+  455  man touch
+  456  touch tag-youre-it.txt
+  457  ls
+  458  cat tag-youre-it.txt
+  459  touch snoot/boop.txt
+  460  ls
+  461  ls snoot
+  462  cd boop.txt
+  463  cat boop.txt
+  464  cat snoot/boop.txt
+  465  man mkdir
+  466  man cat
+  467  man mkdir
+  468  mkdir parent
+  469  ls
+  470  mkdir -p parent/child/grandchild
+  471  man mkdir
+  472  ls parent
+  473  ls child
+  474  ls parent/child
+  475  touch parent/child/grandchild/.gitkeep
+  476  ls grandchild
+  477  ls parent/child/grandchild
+  478  ls -a
+  479  ls -a parnet/child/grandchild
+  480  ls -a parent/child/grandchild
+  481  man mv
+  482  mv pokiemans pokemon
+  483  ls
+  484  man mv
+  485  man rm
+  486  rm lol.txt
+  487  ls
+  488  rm -r kill-me
+  489  ls
+  490  man
+  491  man cp
+  492  cp and-then.txt no-and-then.txt
+  493  ls
+  494  cat no-and-then.txt
+  495  cat and-then.txt
+  496  man history
+  497  history
+  498  history > command-history.txt
