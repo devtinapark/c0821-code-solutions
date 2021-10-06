@@ -7,10 +7,10 @@ const jokester = {
     $jokeForm.classList.add('d-none');
     const $introStatement = this.renderJokePhrase('Hey Flash...');
     this.appendJokePhrase($introStatement);
-    setTimeout(function () {
+    setTimeout(() => {
       const $jokeSetup = this.renderJokePhrase(setup);
       this.appendJokePhrase($jokeSetup);
-      setTimeout(function () {
+      setTimeout(() => {
         const $jokePunchline = this.renderJokePhrase(punchline);
         this.appendJokePhrase($jokePunchline);
         flash.laugh();
@@ -31,7 +31,7 @@ const jokester = {
 const flash = {
   laughingUrl: 'images/flash-laugh.gif',
   laugh: function () {
-    setTimeout(function () {
+    setTimeout(() => {
       $flashImage.setAttribute('src', this.laughingUrl);
     }, 3000);
   }
