@@ -10,7 +10,7 @@ const grades = {
   },
   47: {
     id: 47,
-    names: 'Brenan Eich',
+    name: 'Brendan Eich',
     course: 'JavaScript',
     score: 100
   },
@@ -22,16 +22,25 @@ const grades = {
   }
 };
 
-const dataArray = [];
-for (const key in grades) {
-  dataArray.push(grades[key]);
-}
-
 app.get('/api/grades', (req, res) => {
-  res.json(dataArray);
+  const arrayGrades = [];
+  for (const key in grades) {
+    arrayGrades.push(grades[key]);
+  }
+  res.json(arrayGrades);
+});
+
+app.delete('/api/grades/:id', (req, res) => {
+  const idReq = Number(req.params.id);
+  if (!grades[idReq]) {
+    res.sendStatus(404);
+  } else {
+    delete grades[idReq];
+    res.sendStatus(204);
+  }
 });
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
-  console.log('listening on port 3000');
+  console.log('listening at port 3000');
 });
