@@ -1,5 +1,5 @@
 {
-  "nextId": 13,
+  "nextId": 14,
   "notes": {
     "2": {
       "id": 2,
@@ -25,9 +25,9 @@
       "content": "this is a second try.",
       "id": 11
     },
-    "12": {
-      "content": "third",
-      "id": 12
+    "13": {
+      "content": "To love others is to love oneself.",
+      "id": 13
     }
   }
 }
