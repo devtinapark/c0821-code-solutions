@@ -19,7 +19,6 @@ app.get('/api/grades', (req, res) => {
     .then(result => {
       const resultData = result.rows;
       res.json(resultData);
-      res.status(200);
     })
     .catch(err => {
       console.error(err);
@@ -45,8 +44,8 @@ app.post('/api/grades', (req, res) => {
     db.query(text, values)
       .then(result => {
         const resultData = result.rows[0];
+        res.status(201);
         res.json(resultData);
-        res.status(200);
       })
       .catch(err => {
         console.error(err);
@@ -81,7 +80,6 @@ app.put('/api/grades/:gradeId', (req, res) => {
           });
         } else {
           res.json(resultData);
-          res.status(200);
         }
       })
       .catch(err => {
@@ -112,8 +110,7 @@ app.delete('/api/grades/:gradeId', (req, res) => {
             error: 'Requested gradeId not found'
           });
         } else {
-          res.json(resultData);
-          res.status(200);
+          res.sendStatus(204);
         }
       })
       .catch(err => {
