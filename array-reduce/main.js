@@ -17,14 +17,13 @@ const traits = [
 
 const sum = numbers.reduce((x, y) => x + y);
 const product = numbers.reduce((x, y) => x * y);
-const arrayDeposit = [];
-const arrayWithdrawal = [];
-for (let i = 0; i < account.length; i++) {
-  if (account[i].type === 'deposit') {
-    arrayDeposit.push(account[i].amount);
-  } else if (account[i].type === 'withdrawal') {
-    arrayWithdrawal.push(account[i].amount);
+
+const net = (balance, transaction) => {
+  if (transaction.type === 'deposit') {
+    return balance + transaction.amount;
   }
-}
-const balance = arrayDeposit.reduce((x, y) => x + y) - arrayWithdrawal.reduce((x, y) => x + y);
+  return balance - transaction.amount;
+};
+const balance = account.reduce(net, 0);
+
 const composite = traits.reduce((x, y) => Object.assign(y, x));
