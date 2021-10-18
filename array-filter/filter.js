@@ -9,4 +9,4 @@ function filter(array, predicate) {
   return newArray;
 }
 
-const evenP = number => number % 2 === 0;
+const evenPredicate = number => number % 2 === 0;
