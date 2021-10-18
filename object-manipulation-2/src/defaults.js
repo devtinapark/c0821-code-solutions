@@ -2,7 +2,7 @@
 
 function defaults(target, source) {
   for (var key2 in source) {
-    if (Object.keys(target).length === 0) {
+    if (typeof target[key2] === 'undefined') {
       target[key2] = source[key2];
     } else {
       if (!Object.keys(target).includes(key2)) {
