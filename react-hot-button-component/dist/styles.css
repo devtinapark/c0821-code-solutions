@@ -1,0 +1,37 @@
+button {
+  width: 200px;
+  height: 100px;
+  font-size: 2rem;
+  color: white;
+}
+
+.B1 {
+  background-color: black;
+}
+
+.B2 {
+  background-color: rgb(54, 28, 116);
+}
+
+.B3 {
+  background-color: rgb(103, 78, 167);
+}
+
+.B4 {
+  background-color: rgb(224, 102, 102);
+}
+
+.B5 {
+  background-color: rgb(246, 179, 106);
+}
+
+.B6 {
+  background-color: rgb(254, 255, 0);
+  color: black;
+}
+
+.B7 {
+  background-color: rgb(255, 255, 255);
+  color: red;
+  border: 10px solid red;
+}
