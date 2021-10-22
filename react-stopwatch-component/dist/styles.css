@@ -1,0 +1,27 @@
+p {
+  font-family: sans-serif;
+  font-size: 4rem;
+}
+
+i {
+  position: absolute;
+  top: 220px;
+  left: 96px;
+}
+
+.relative {
+  display: relative;
+}
+
+.circle {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
