@@ -1,0 +1,54 @@
+#root {
+  position: relative;
+}
+
+.switchOn {
+  width: 200px;
+  height: 100px;
+  display: block;
+  background: rgb(120, 199, 42);
+  border-radius: 100px;
+  border: none;
+  position: relative;
+}
+
+.switchOn::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 90px;
+}
+
+.switchOff {
+  width: 200px;
+  height: 100px;
+  display: block;
+  background: grey;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+}
+
+.switchOff::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 90px;
+}
+
+.text {
+  border: none;
+  background-color: transparent;
+  font-size: 5rem;
+  position: absolute;
+  top: 5px;
+  left: 230px;
+}
