@@ -6,7 +6,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       users: [],
-      isLoading: false
+      isLoading: true
     };
   }
 
@@ -21,6 +21,7 @@ class App extends React.Component {
           arrayUsers.push(data[i]);
         }
         this.setState({ users: arrayUsers });
+        this.setState({ isLoading: false });
       })
       .catch(console.error);
   }
