@@ -42,6 +42,7 @@ app.get('/api/todos', (req, res) => {
 app.post('/api/todos', (req, res) => {
   const { task, isCompleted = false } = req.body;
   if (!task || typeof isCompleted !== 'boolean') {
+    console.log(task, typeof task, isCompleted, typeof isCompleted);
     res.status(400).json({
       error: 'task (string) and isCompleted (boolean) are required fields'
     });

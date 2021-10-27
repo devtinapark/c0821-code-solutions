@@ -14,17 +14,31 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    /**
-     * Use fetch to send a GET request to `/api/todos`.
-     * Then 😉, once the response JSON is received and parsed,
-     * update state with the received todos.
-     */
+    fetch('/api/todos', {
+      method: 'GET'
+    })
+      .then(res => res.json())
+      .then(data => {
+        const arrayTodos = [];
+        for (let i = 0; i < data.length; i++) {
+          arrayTodos.push(data[i]);
+        }
+        this.setState({ todos: arrayTodos });
+      });
   }
 
   addTodo(newTodo) {
+    fetch('/api/todos', {
+      method: 'POST'
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        const todo = JSON.stringify(data);
+        console.log(todo);
+      });
     /**
-    * Use fetch to send a POST request to `/api/todos`.
-    * Then 😉, once the response JSON is received and parsed,
+
     * add the created todo to the state array.
     *
     * Do not mutate the original state array, nor any objects within it.
