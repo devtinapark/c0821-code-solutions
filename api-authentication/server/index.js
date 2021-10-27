@@ -49,34 +49,28 @@ app.post('/api/auth/sign-in', (req, res, next) => {
   }
   const sql = `
     select "userId", "username", "hashedPassword"
-    from "users"`;
-  db.query(sql)
+    from "users"
+    where "username" = $1`;
+  const params = [username];
+  db.query(sql, params)
     .then(result => {
-      const queryUsers = result.rows;
-      let usernameExists = false;
-      for (let i = 0; i < queryUsers.length; i++) {
-        if (username === queryUsers[i].username) {
-          usernameExists = true;
-          argon2
-            .verify(queryUsers[i].hashedPassword, password)
-            .then(isMatching => {
-              if (isMatching === false) {
-                throw new ClientError(401, 'Password does not match');
-              } else {
-                const payload = {
-                  userId: queryUsers[i].userId,
-                  username: queryUsers[i].username
-                };
-                payload.token = jwt.sign(payload, process.env.TOKEN_SECRET);
-                res.status(200).json(payload);
-              }
-            })
-            .catch(err => next(err));
-        }
+      const [user] = result.rows;
+      if (!user) {
+        throw new ClientError(401, 'invalid login');
       }
-      if (usernameExists === false) {
-        throw new ClientError(401, 'Username not found');
-      }
+      const { userId, hashedPassword } = user;
+      return argon2
+        .verify(hashedPassword, password)
+        .then(isMatching => {
+          if (!isMatching) {
+            throw new ClientError(401, 'invalid login');
+          } else {
+            const payload = { userId, username };
+            const token = jwt.sign(payload, process.env.TOKEN_SECRET);
+            res.status(200).json({ user: payload, token: token });
+          }
+        })
+        .catch(err => next(err));
     })
     .catch(err => next(err));
 });
