@@ -29,30 +29,45 @@ export default class App extends React.Component {
 
   addTodo(newTodo) {
     fetch('/api/todos', {
-      method: 'POST'
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newTodo)
     })
       .then(res => res.json())
       .then(data => {
-        console.log(data);
-        const todo = JSON.stringify(data);
-        console.log(todo);
+        const oldArray = this.state.todos;
+        const newToDo = data;
+        const newArray = oldArray.concat(newToDo);
+        this.setState({ todos: newArray });
       });
-    /**
-
-    * add the created todo to the state array.
-    *
-    * Do not mutate the original state array, nor any objects within it.
-    * https://reactjs.org/docs/optimizing-performance.html#the-power-of-not-mutating-data
-    *
-    * TIP: Be sure to SERIALIZE the todo object in the body with JSON.stringify()
-    * and specify the "Content-Type" header as "application/json"
-    *
-    * TIP: Use Array.prototype.concat to create a new array containing the contents
-    * of the old array, plus the object returned by the server.
-    */
   }
 
   toggleCompleted(todoId) {
+    const todosArray = this.state.todos;
+    for (let i = 0; i < todosArray.length; i++) {
+      if (todoId === todosArray[i].todoId) {
+        const todo = todosArray[i];
+        const oldStatus = todo.isCompleted;
+        const newStatus = !oldStatus;
+        fetch(`/api/todos/${todoId}`, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(todo)
+        })
+          .then(res => res.json())
+          .then(data => {
+            const oldArray = this.state.todos;
+            const newToDo = data;
+            const newArray = [];
+            for (let i = 0; i < oldArray.)
+            console.log(data);
+          });
+      }
+    }
     /**
      * Find the index of the todo with the matching todoId in the state array.
      * Get its "isCompleted" status.
