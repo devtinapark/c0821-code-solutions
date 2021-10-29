@@ -9,6 +9,7 @@ class StopWatch extends React.Component {
     this.tick = this.tick.bind(this);
     this.playSeconds = this.playSeconds.bind(this);
     this.pauseSeconds = this.pauseSeconds.bind(this);
+    this.resetSeconds = this.resetSeconds.bind(this);
   }
 
   getIconName() {
@@ -44,12 +45,20 @@ class StopWatch extends React.Component {
     clearInterval(this.timer);
   }
 
+  resetSeconds() {
+    if (this.state.playOrPause === 'pause') {
+      this.setState({ seconds: 0 });
+    }
+  }
+
   render() {
     const iconName = this.getIconName();
     const displaySeconds = this.state.seconds;
     return (
     <>
-      <div className="circle centered">
+      <div
+        onClick={ this.resetSeconds }
+        className="circle centered">
         <p>{ displaySeconds }</p>
       </div>
       <div className="relative">
