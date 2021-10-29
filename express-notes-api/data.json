@@ -1,5 +1,5 @@
 {
-  "nextId": 14,
+  "nextId": 10,
   "notes": {
     "2": {
       "id": 2,
@@ -16,18 +16,6 @@
     "9": {
       "id": 9,
       "content": "Inertia is a property of matter."
-    },
-    "10": {
-      "content": "hey",
-      "id": 10
-    },
-    "11": {
-      "content": "this is a second try.",
-      "id": 11
-    },
-    "13": {
-      "content": "To love others is to love oneself.",
-      "id": 13
     }
   }
 }

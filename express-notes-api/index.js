@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-
 app.get('/api/grades', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     if (err) throw err;
@@ -13,7 +12,6 @@ app.get('/api/grades', (req, res) => {
     res.json(dataNotesArray);
   });
 });
-
 app.get('/api/grades/:id', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     if (err) throw err;
@@ -36,9 +34,7 @@ app.get('/api/grades/:id', (req, res) => {
     }
   });
 });
-
 app.use(express.json());
-
 app.post('/api/grades', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     const dataParsed = JSON.parse(data);
@@ -68,7 +64,6 @@ app.post('/api/grades', (req, res) => {
     }
   });
 });
-
 app.delete('/api/grades/:id', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     const dataParsed = JSON.parse(data);
@@ -102,35 +97,6 @@ app.delete('/api/grades/:id', (req, res) => {
     }
   });
 });
-
-app.put('/api/grades/:id', (res, req) => {
-  const id = Number(req.params.id);
-  const content = req.body.content;
-  if (!Number.isInteger(id) || id < 0 || !content) {
-    res.sendStatus(400).json({
-      error: 'invalid input'
-    });
-  } else {
-    fs.readFile('data.json', 'utf8', (err, data) => {
-      const dataParsed = JSON.parse(data);
-      if (!dataParsed.notes[id]) {
-        res.sendStatus(404).json({
-          error: `cannot find note with id ${id}`
-        });
-      } else if (err) {
-        res.sendStatus(500).json({
-          error: 'An unexpected error occured'
-        });
-      } else {
-        dataParsed.notes[id.toString()].content = content;
-        res.sendStatus(200).json(
-          dataParsed.notes[id.toString()]
-        );
-      }
-    });
-  }
-});
-
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
   console.log('listening on port 3000');
