@@ -1,5 +1,6 @@
 import React from 'react';
 import Redirect from '../components/redirect';
+import AppContext from '../lib/app-context';
 
 const styles = {
   gifContainer: {
@@ -30,3 +31,5 @@ export default class Home extends React.Component {
     );
   }
 }
+
+Home.contextType = AppContext;

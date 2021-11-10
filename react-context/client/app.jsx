@@ -8,10 +8,6 @@ import NotFound from './pages/not-found';
 import Navbar from './components/navbar';
 import PageContainer from './components/page-container';
 
-Navbar.contextType = AppContext;
-Auth.contextType = AppContext;
-Home.contextType = AppContext;
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);
