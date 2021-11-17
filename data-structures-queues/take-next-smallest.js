@@ -12,3 +12,18 @@ function takeNextSmallest(queue) {
     if (firstValue <= secondValue) { return firstValue; } else { queue.enqueue(firstValue); }
   }
 }
+
+/*
+Tim's solution:
+
+if..return;
+const first = queue.dequeue();
+if..return first;
+if (first > next) {
+  queue.enqueue(first);
+  return next;
+}
+queue.enque(next);
+return first;
+
+*/

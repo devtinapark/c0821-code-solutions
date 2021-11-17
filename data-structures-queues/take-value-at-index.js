@@ -8,3 +8,15 @@ function takeValueAtIndex(queue, index) {
   }
   return queue.dequeue();
 }
+
+/*
+Tim's solution:
+
+if...return;
+while (queue.peek() !== undefined && index > 0) {
+  queue.enqueue(queue.dequeue());
+  index--;
+}
+return queue.dequeue;
+
+*/
