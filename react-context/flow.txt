@@ -1,0 +1,28 @@
+(1) User can sign up
+index.jsx -> App is rendered
+-> app.jsx -> Navbar and PageContainer are rendered within AppContext Provider
+-> Current state’s user, route, handleSignIn, and handleSignOut are passed down as context to children of App, including Navbar, PageContainer, and { this.renderPage() }
+-> Navbar is rendered -> navbar.jsx -> user value is null -> sign-up path
+-> PageContainer is rendered -> page-container.jsx
+-> { this.renderPage() } is rendered -> method called -> Since path is equal to ‘sign-up’, Auth is returned.
+-> auth.jsx -> AuthForm is rendered -> fetch ‘/api/auth/sign-up
+
+(2) User can sign in
+index.jsx -> App is rendered
+-> app.jsx -> Navbar and PageContainer are rendered within AppContext Provider
+-> Current state’s user, route, handleSignIn, and handleSignOut are passed down as context to children of App, including Navbar, PageContainer, and { this.renderPage() }
+-> Navbar is rendered -> navbar.jsx -> user value is null -> sign-in path
+-> PageContainer is rendered -> page-container.jsx
+-> { this.renderPage() } is rendered -> method called -> Since path is equal to ‘sign-in’, Auth is returned.
+-> auth.jsx -> AuthForm is rendered -> fetch ‘/api/auth/sign-in
+
+(3) User stays signed in
+parseRoute(window.location.hash)
+Hash change -> Current state is set to: route: index.jsx
+-> Follows the same flow as (2) User can sign in
+
+(4) User can sign out
+index.jsx -> App is rendered
+-> app.jsx -> Navbar and PageContainer are rendered within AppContext Provider
+-> Current state’s user, route, handleSignIn, and handleSignOut are passed down as context to children of App, including Navbar, PageContainer, and { this.renderPage() }
+-> Navbar is rendered -> navbar.jsx -> user value is NOT null -> handleSignOut() method is called from app.jsx -> User value becomes null and token is removed.
