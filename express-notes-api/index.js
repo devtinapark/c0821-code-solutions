@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-
 app.get('/api/grades', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     if (err) throw err;
@@ -13,7 +12,6 @@ app.get('/api/grades', (req, res) => {
     res.json(dataNotesArray);
   });
 });
-
 app.get('/api/grades/:id', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     if (err) throw err;
@@ -36,9 +34,7 @@ app.get('/api/grades/:id', (req, res) => {
     }
   });
 });
-
 app.use(express.json());
-
 app.post('/api/grades', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     const dataParsed = JSON.parse(data);
@@ -68,7 +64,6 @@ app.post('/api/grades', (req, res) => {
     }
   });
 });
-
 app.delete('/api/grades/:id', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     const dataParsed = JSON.parse(data);
@@ -102,7 +97,6 @@ app.delete('/api/grades/:id', (req, res) => {
     }
   });
 });
-
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
   console.log('listening on port 3000');
